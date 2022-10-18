@@ -1,5 +1,15 @@
 import styled from 'styled-components';
 
+export const List = styled.ul`
+  padding: 15px;
+  display: flex;
+  justify-content: space-evenly;
+`;
+
+export const Item = styled.li`
+  display: block;
+`;
+
 // export const BList = styled.ul `
 //   padding: 15px;
 // `;
