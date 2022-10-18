@@ -1,1 +1,3 @@
-export const Notification = ({ message }) => <p>{message}</p>;
+const { Message } = require('./Notification.styled');
+
+export const Notification = ({ message }) => <Message>{message}</Message>;
