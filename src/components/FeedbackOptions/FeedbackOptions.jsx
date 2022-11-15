@@ -4,9 +4,13 @@ import PropTypes from 'prop-types';
 export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   return (
     <List>
-      {Object.keys(options).map(option => (
+      {options.map(option => (
         <Item key={option}>
-          <button name={option} type="button" onClick={onLeaveFeedback}>
+          <button
+            type="button"
+            name={option}
+            onClick={() => onLeaveFeedback(option)}
+          >
             {option[0].toUpperCase() + option.substring(1)}
           </button>
         </Item>
